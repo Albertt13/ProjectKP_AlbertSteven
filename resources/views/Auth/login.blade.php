@@ -17,7 +17,7 @@
     <div class="col-lg-5 col-12">
         <div id="auth-left" class="d-flex flex-column">
             <div class="auth-logo mx-auto">
-                <a href="index.html"><img src="{{ asset('template/assets/images/logo/logo.svg') }}" alt="Logo"></a>
+                <a href='/login'><img src="{{ asset('template/assets/images/logo/logo.svg') }}" alt="Logo"></a>
             </div>
             <h1 class="auth-title mx-auto">Log in Admin</h1>
 
@@ -43,12 +43,7 @@
                         <i class="bi bi-shield-lock"></i>
                     </div>
                 </div>
-                <div class="form-check form-check-lg d-flex align-items-end">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label text-gray-600" for="flexCheckDefault">
-                        Keep me logged in
-                    </label>
-                </div>
+
                 <button class="btn btn-success btn-block btn-lg shadow-lg mt-5">Log in</button>
             </form>
         </div>
@@ -61,6 +56,19 @@
 </div>
 
     </div>
+    
+    @if(Session::has('success'))
+    <script>
+        Swal.fire({
+                title: 'Success!',
+                text: 'Data has been saved successfully.',
+                icon: 'success',
+                confirmButtonText: 'Ok'
+            });
+    </script>
+        
+    @endif
+    
 </body>
 
 </html>

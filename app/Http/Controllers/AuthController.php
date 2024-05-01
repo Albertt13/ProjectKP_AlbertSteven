@@ -23,7 +23,9 @@ class AuthController extends Controller
 
         $user->save();
 
-        return back()->with('success','Register Successfully');
+        //return view('/Auth/login')->with('success','Register Successfully');
+        // sleep(5);
+        return view('/Auth/login')->with('success', 'Admin has been registered successfully!');
     }
 
     public function login(){
@@ -33,20 +35,20 @@ class AuthController extends Controller
     {
         // return view('Auth.login');
         // dd($request->all());
-        // $credetials = [
-        //     'email'=> $request->email,
-        //     'password'=>$request->password,    
-        // ];
+        $credetials = [
+            'email'=> $request->email,
+            'password'=>$request->password,    
+        ];
 
-        // if (Auth::attempt($credetials)) {   
-        //     return redirect('/admin')->with('success', 'Login Successfully');
-        // }
-
-        // return back()->with('error', 'Email or Password Salah');
-        
-        if (Auth::attempt($request->only('email','password'))) {   
-            return redirect('');
+        if (Auth::attempt($credetials)) {   
+            return redirect('')->with('success', 'Login Successfully');
         }
-        return redirect('Auth.login');
+
+        return back()->with('error', 'Email or Password Salah');
+        
+        // if (Auth::attempt($request->only('email','password'))) {   
+        //     return redirect('');
+        // }
+        // return redirect('Auth.login');
     }
 }

@@ -12,3 +12,7 @@ Admin Register
 - Name : Albert
 - Email : dhikaalbertus1007@gmail.com
 - Password : 123456
+
+Jalanin perintah ini di terminal sebelum memulai ngoding : 
+- npm install
+- npm run dev

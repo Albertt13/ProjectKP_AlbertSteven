@@ -5,7 +5,16 @@ body{
         height:100vh;overflow-x:hidden
     }
     #auth #auth-right{
-        background:url(../../../assets/images/4853433.png?45649b87e0b3f50bfa1372c6cdb4595f),linear-gradient(90deg,#2d499d,#3f5491);height:100%
+        background:url(../../../assets/images/sako1.jpeg),linear-gradient(100deg,#204A22,#204A22);
+        height:100%;
+        background-size:contain;
+        /* Untuk mengulangi gambar secara horizontal dan vertikal */
+        background-repeat:no-repeat;
+        /* Pusatkan gambar di dalam elemen */
+        background-position:center;
+        /* Tinggi sesuai dengan konten */
+        background-image: ;
+        
     }
     #auth #auth-left{
         padding:3rem 4rem
@@ -31,5 +40,5 @@ body{
             #auth #auth-left{padding:5rem 3rem}
         }
             body.theme-dark #auth-right{
-                background:url(../../../assets/images/4853433.png?45649b87e0b3f50bfa1372c6cdb4595f),linear-gradient(90deg,#2d499d,#3f5491)
+                background:url(../../../assets/images/sako1.jpeg),linear-gradient(90deg,#2d499d,#3f5491)
             }

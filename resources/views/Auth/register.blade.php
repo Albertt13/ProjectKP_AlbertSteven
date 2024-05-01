@@ -15,11 +15,11 @@
         
 <div class="row h-100">
     <div class="col-lg-5 col-12">
-        <div id="auth-left">
-            <div class="auth-logo">
-                <a href="index.html"><img src="{{ asset('template/assets/images/logo/logo.svg') }}" alt="Logo"></a>
+        <div id="auth-left" class="d-flex flex-column">
+            <div class="auth-logo mx-auto">
+                <a href='/register'><img src="{{ asset('template/assets/images/logo/logo.svg') }}" alt="Logo"></a>
             </div>
-            <h1 class="auth-title">Sign up Admin</h1>
+            <h1 class="auth-title mx-auto">Sign up Admin</h1>
 
             @if (Session::has('success'))
             <div class="alert alert-success" role="alert">
@@ -59,6 +59,18 @@
 </div>
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // SweetAlert
+        
+        // function showAlert() {
+        //     Swal.fire({
+        //         title: 'Success!',
+        //         text: 'Data has been saved successfully.',
+        //         icon: 'success',
+        //         confirmButtonText: 'Ok'
+        //     });
+    </script>
 </body>
 
 </html>
