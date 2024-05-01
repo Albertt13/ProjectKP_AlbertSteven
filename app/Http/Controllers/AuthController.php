@@ -5,6 +5,8 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
+use RealRashid\SweetAlert\Facades\Alert;
+use Illuminate\Support\Facades\Session;
 
 class AuthController extends Controller
 {
@@ -21,11 +23,10 @@ class AuthController extends Controller
         $user->email = $request->email;
         $user->password = Hash::make($request->password);
 
-        $user->save();
+        // $user->save();
 
-        //return view('/Auth/login')->with('success','Register Successfully');
-        // sleep(5);
-        return view('/Auth/login')->with('success', 'Admin has been registered successfully!');
+        // $request->session()->flash('success', 'Registrasi berhasil');
+        return redirect()->route('login')->with('success', 'Login Successfully');
     }
 
     public function login(){

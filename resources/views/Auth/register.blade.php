@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Admin</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     @include('include.style')
     
@@ -20,13 +21,6 @@
                 <a href='/register'><img src="{{ asset('template/assets/images/logo/logo.svg') }}" alt="Logo"></a>
             </div>
             <h1 class="auth-title mx-auto">Sign up Admin</h1>
-
-            @if (Session::has('success'))
-            <div class="alert alert-success" role="alert">
-                {{ Session::get('success') }}
-            </div>
-            @endif
-            
             <form action="{{ route('postregister') }}" method="POST">
               {{ csrf_field() }}
               <label for="username">Name</label>
@@ -58,19 +52,7 @@
     </div>
 </div>
 
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script>
-        // SweetAlert
-        
-        // function showAlert() {
-        //     Swal.fire({
-        //         title: 'Success!',
-        //         text: 'Data has been saved successfully.',
-        //         icon: 'success',
-        //         confirmButtonText: 'Ok'
-        //     });
-    </script>
+    </div>   
 </body>
 
 </html>

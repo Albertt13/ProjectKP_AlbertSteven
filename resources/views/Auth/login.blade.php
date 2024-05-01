@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Admin</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     @include('include.style')
     
@@ -56,19 +57,17 @@
 </div>
 
     </div>
-    
-    @if(Session::has('success'))
-    <script>
-        Swal.fire({
-                title: 'Success!',
-                text: 'Data has been saved successfully.',
+    @if (session('success'))
+        <script>
+            // Tampilkan pesan sukses menggunakan SweetAlert2
+            Swal.fire({
                 icon: 'success',
-                confirmButtonText: 'Ok'
+                title: 'Registrasi Berhasil',
+                text: '{{ session('success') }}'
             });
-    </script>
-        
+        </script>
     @endif
-    
+
 </body>
 
 </html>
