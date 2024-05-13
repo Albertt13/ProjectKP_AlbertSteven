@@ -23,7 +23,7 @@ class AuthController extends Controller
         $user->email = $request->email;
         $user->password = Hash::make($request->password);
 
-        // $user->save();
+        $user->save();
 
         // $request->session()->flash('success', 'Registrasi berhasil');
         return redirect()->route('login')->with('success', 'Login Successfully');
@@ -42,7 +42,7 @@ class AuthController extends Controller
         ];
 
         if (Auth::attempt($credetials)) {   
-            return redirect('')->with('success', 'Login Successfully');
+            return redirect()->route('/home')->with('success', 'Login Successfully');
         }
 
         return back()->with('error', 'Email or Password Salah');
@@ -51,5 +51,11 @@ class AuthController extends Controller
         //     return redirect('');
         // }
         // return redirect('Auth.login');
+    }
+
+    public function logout() {
+        Auth::logout();
+
+        return redirect()->route('login');
     }
 }

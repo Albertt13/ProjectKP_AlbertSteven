@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DaftarController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +22,10 @@ Route::group(['middleware' => 'guest'], function () {
     Route::post('/postlogin', [AuthController::class,'postlogin'])->name('postlogin');
 });
 
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/home', [DaftarController::class, 'home']);
+    Route::delete('/logout', [AuthController::class, 'logout'])->name('logout');
+});
 // Route::get('/login', function () {
 //     return view('Auth.login');
 // });
