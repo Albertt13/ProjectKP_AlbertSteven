@@ -1,0 +1,218 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #0D3180;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #0D3180;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.profile {
+    text-align: center;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 130%;
+    /* or 26px */
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px #000000;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    padding-top: 25px;
+    /* border: 1px solid #fff; */
+}
+
+.profile p {
+    margin-top: 10px;
+    font-size: 1.4em;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.sidebar nav ul li {
+    width: 100%;
+}
+
+.sidebar .sidebar-title {
+    position: absolute;
+    left: 10px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 130%;
+    /* identical to box height, or 17px */
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 30px;
+    font-size: 1.1em;
+    transition: background 0.3s;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active {
+    background:radial-gradient(50% 128.57% at 50% -36.61%, #8015A7 0%, rgba(97, 54, 144, 0) 100%);
+}
+
+.main-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-navbar {
+    background-color: #0D3180;
+    color: white;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ccc;
+}
+.top-navbar .user-info {
+    padding-right: 30px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-info .user-name {
+    font-size: 1.1em;
+}
+
+.user-info .user-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    color: white;
+}
+
+.logout-btn {
+    background-color: #FF4B4B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #FF1A1A;
+}
+
+.main-content {
+    padding: 40px;
+    background-color: #E4E9F2;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.data-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.save-btn {
+    background-color: #0D3180;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em;
+    align-self: flex-end;
+    transition: background 0.3s;
+}
+
+.save-btn:hover {
+    background-color: #232B72;
+}

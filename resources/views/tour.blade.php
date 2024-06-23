@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar Data Jamaah</title>
+    <title>Daftar Data Tour</title>
     <link rel="stylesheet" href='{{ asset('template/assets/css/pages/home.css') }}'>
 </head>
 <body>
@@ -16,8 +16,8 @@
             <nav>
                 <ul>
 
-                    <li><a href="/home" class="active">Daftar Jamaah</a></li>
-                    <li><a href="/tour">Daftar Tour</a></li>
+                    <li><a href="/home">Daftar Jamaah</a></li>
+                    <li><a href="/tour" class="active">Daftar Tour</a></li>
                     <li><a href="/riwayat">List Pendaftaran Jamaah</a></li>
                     <li><a href="/riwayattour">List Pendaftaran Tour</a></li>
                     <li><a href="/laporanjamaah">Laporan Jamaah</a></li>
@@ -45,8 +45,8 @@
             <main class="main-content">
                 
                 <div class="card">
-                    <h1>Daftar Data Jamaah</h1>
-                    <form class="data-form" action="{{ url('daftarJamaah') }}" method="POST">
+                    <h1>Daftar Data Tour</h1>
+                    <form class="data-form" action="{{ url('daftarTour') }}" method="POST">
                         @csrf
                         <div class="form-row">
                             <div class="form-group">

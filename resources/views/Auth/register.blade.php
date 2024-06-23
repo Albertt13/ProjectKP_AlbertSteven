@@ -18,7 +18,7 @@
     <div class="col-lg-5 col-12">
         <div id="auth-left" class="d-flex flex-column">
             <div class="auth-logo mx-auto">
-                <a href='/register'><img src="{{ asset('template/assets/images/logo/logo.svg') }}" alt="Logo"></a>
+                <a href='/register'><img src="{{ asset('template/assets/images/logo/logoUmrahSako.jpeg') }}" alt="Logo"></a>
             </div>
             <h1 class="auth-title mx-auto">Sign up Admin</h1>
             <form action="{{ route('postregister') }}" method="POST">

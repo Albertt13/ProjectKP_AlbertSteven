@@ -18,7 +18,7 @@
     <div class="col-lg-5 col-12">
         <div id="auth-left" class="d-flex flex-column">
             <div class="auth-logo mx-auto">
-                <a href='/login'><img src="{{ asset('template/assets/images/logo/logo.svg') }}" alt="Logo"></a>
+                <a href='/login'><img src="{{ asset('template/assets/images/logo/logoUmrahSako.jpeg') }}" alt="Logo"></a>
             </div>
             <h1 class="auth-title mx-auto">Log in Admin</h1>
 
