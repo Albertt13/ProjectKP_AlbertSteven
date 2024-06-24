@@ -9,8 +9,7 @@
     {{-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css"> --}}
     <!-- Bootstrap CSS -->
     {{-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> --}}
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
 </head>
 <body>
     <div class="container">
@@ -96,6 +95,9 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="pagination-button">
+                    {{ $riwayat->links() }}
+                </div>
             </main>
         </div>
     </div>
@@ -105,7 +107,8 @@
     {{-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script> --}}
     <!-- DataTables JS -->
     {{-- <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script> --}}
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script>
         $(document).ready(function() {
             // $('#tablejamaah').DataTable({

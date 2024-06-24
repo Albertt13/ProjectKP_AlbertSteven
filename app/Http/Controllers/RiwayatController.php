@@ -17,8 +17,13 @@ class RiwayatController extends Controller
         $riwayat = DB::table('daftar')
             ->select('id','mr_mrs', 'fullname', 'gender', 'paket', 'price', 'plane_number', 'sales_by', 'keterangan')
             ->orderByDesc('id')
-            ->get();
+            ->simplePaginate(15);
+
         $user_name = Auth::user()->name;
+
+        // Paginasi
+        //$riwayat = $riwayats->paginate(10);
+
         return view('riwayat', compact('user_name', 'riwayat'));
         // return view('riwayat');
     }

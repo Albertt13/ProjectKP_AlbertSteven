@@ -91,6 +91,9 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="pagination-button">
+                    {{ $riwayattour->links() }}
+                </div>
             </main>
         </div>
     </div>

@@ -252,3 +252,53 @@ td .action-buttons {
 .btn-search:hover {
     background-color: #218838; /* Warna hijau lebih gelap saat di-hover */
 }
+
+/* Pagination */
+.pagination-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-button .pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination-button .page-item {
+    margin: 0 5px;
+}
+
+.pagination-button .page-link {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #dee2e6;
+    color: #007bff;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.pagination-button .page-link:hover {
+    background-color: #e9ecef;
+    text-decoration: none;
+}
+
+.pagination-button .page-link:focus {
+    outline: none;
+}
+
+.pagination-button .active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.pagination-button .disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
