@@ -52,7 +52,6 @@ class TourController extends Controller
         $tour->price = $request->price;
         $tour->dp = $request->dp;
         $tour->sisa_pembayaran = $request->sisa_pembayaran;
-        $tour->diskon = $request->diskon;
 
         // Perhitungan Price, Diskon, dan DP
         // $price = floatval(str_replace(',', '', $request->price));

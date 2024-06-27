@@ -55,14 +55,14 @@
                         <thead>
                             <tr>
                                 <th>Mr/Mrs</th>
-                                <th>Full Name</th>
-                                <th>Gender</th>
-                                <th>Paket</th>
-                                <th>Price</th>
-                                <th>Plane Number</th>
-                                <th>Sales By</th>
-                                <th>Keterangan</th>
-                                <th>Action</th>
+                                <th>FULL NAME</th>
+                                <th>GENDER</th>
+                                <th>PAKET</th>
+                                <th>PRICE</th>
+                                <th>PLANE NUMBER</th>
+                                <th>SALES BY</th>
+                                <th>KETERANGAN</th>
+                                <th>ACTION</th>
                             </tr>
                         </thead>
                         <tbody id="data-table-body">

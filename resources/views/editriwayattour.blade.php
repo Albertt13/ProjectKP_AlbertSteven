@@ -118,10 +118,10 @@
                                 <label for="price">PRICE</label>
                                 <input type="text" id="price" name="price" value="{{ $riwayattour->price }}" placeholder="Rp 29.000.000,00" type-currency="IDR" required>
                             </div>
-                            <div class="form-group">
+                            {{-- <div class="form-group">
                                 <label for="diskon">DISCOUNT (%)</label>
                                 <input type="text" id="diskon" name="diskon" value="{{ $riwayattour->diskon }}" placeholder="%" required>
-                            </div>
+                            </div> --}}
                         </div>
                         <div class="form-row">
                             <div class="form-group">
@@ -169,24 +169,23 @@
         });
     });
 
-// Perhitungan Price
-    // Calculate remaining payment
+    // Perhitungan Price
     document.addEventListener('DOMContentLoaded', function() {
         function calculateSisaPembayaran() {
             const price = parseFloat(document.getElementById('price').value.replace(/[^,\d]/g, '')) || 0;
-            const diskon = parseFloat(document.getElementById('diskon').value.replace(/[^,\d]/g, '')) || 0;
+            //const diskon = parseFloat(document.getElementById('diskon').value.replace(/[^,\d]/g, '')) || 0;
             const dp = parseFloat(document.getElementById('dp').value.replace(/[^,\d]/g, '')) || 0;
 
-            const discountedPrice = price - (price * (diskon / 100));
-            const sisaPembayaran = discountedPrice - dp;
+            //const discountedPrice = price - (price * (diskon / 100));
+            const sisaPembayaran = price - dp;
 
             document.getElementById('sisa_pembayaran').value = sisaPembayaran.toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
         }
 
             document.getElementById('price').addEventListener('input', calculateSisaPembayaran);
-            document.getElementById('diskon').addEventListener('input', calculateSisaPembayaran);
+            //document.getElementById('diskon').addEventListener('input', calculateSisaPembayaran);
             document.getElementById('dp').addEventListener('input', calculateSisaPembayaran);
-        });
+    });
     </script>
 </body>
 </html>

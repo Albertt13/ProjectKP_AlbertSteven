@@ -13,7 +13,7 @@ class RiwayatTourController extends Controller
         $riwayattour = DB::table('tours')
             ->select('id','mr_mrs', 'fullname', 'gender', 'paket', 'price', 'plane_number', 'sales_by', 'keterangan')
             ->orderByDesc('id')
-            ->simplePaginate(15);;
+            ->simplePaginate(4);;
         $user_name = Auth::user()->name;
         return view('riwayattour', compact('user_name', 'riwayattour'));
         // return view('riwayattour');

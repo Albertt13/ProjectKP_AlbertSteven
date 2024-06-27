@@ -28,7 +28,6 @@ class Daftar extends Model
         'paket',
         'price',
         'dp',
-        'diskon',
         'sisa_pembayaran',
         'sales_by',
         'keterangan',

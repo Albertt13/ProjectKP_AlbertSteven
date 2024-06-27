@@ -27,7 +27,6 @@ class DaftarController extends Controller
         $daftar->price = $request->price;
         $daftar->dp = $request->dp;
         $daftar->sisa_pembayaran = $request->sisa_pembayaran;
-        $daftar->diskon = $request->diskon;
 
         // Perhitungan Price, Diskon, dan DP
         //$price = floatval(str_replace(',', '', $request->price));

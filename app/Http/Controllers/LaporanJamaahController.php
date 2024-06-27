@@ -37,7 +37,6 @@ class LaporanJamaahController extends Controller
             ->orWhere('paket', 'LIKE', "%{$query}%")
             ->orWhere('price', 'LIKE', "%{$query}%")
             ->orWhere('dp', 'LIKE', "%{$query}%")
-            ->orWhere('diskon', 'LIKE', "%{$query}%")
             ->orWhere('sales_by', 'LIKE', "%{$query}%")
             ->orWhere('keterangan', 'LIKE', "%{$query}%")
             ->orderByDesc('id')
@@ -64,7 +63,7 @@ class LaporanJamaahController extends Controller
                 '<td>'. $lj->paket .'</td>'.
                 '<td>'. $lj->price .'</td>'.
                 '<td>'. $lj->dp .'</td>'.
-                '<td>'. $lj->diskon .'</td>'.
+                //'<td>'. $lj->diskon .'</td>'.
                 '<td>'. $lj->sisa_pembayaran .'</td>'.
                 '<td>'. $lj->sales_by .'</td>'.
                 '<td>'. $lj->keterangan .'</td>'.

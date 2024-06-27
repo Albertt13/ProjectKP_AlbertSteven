@@ -63,7 +63,6 @@ class LaporanTourController extends Controller
                 '<td>'. $lt->paket .'</td>'.
                 '<td>'. $lt->price .'</td>'.
                 '<td>'. $lt->dp .'</td>'.
-                '<td>'. $lt->diskon .'</td>'.
                 '<td>'. $lt->sisa_pembayaran .'</td>'.
                 '<td>'. $lt->sales_by .'</td>'.
                 '<td>'. $lt->keterangan .'</td>'.

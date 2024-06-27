@@ -27,7 +27,7 @@ return new class extends Migration
             $table->string('paket');
             $table->string('price');
             $table->string('dp');
-            $table->string('diskon');
+           // $table->string('diskon');
             $table->string('sisa_pembayaran');
             $table->string('sales_by');
             $table->string('keterangan');

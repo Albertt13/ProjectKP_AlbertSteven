@@ -57,23 +57,23 @@
                         <thead>
                             <tr>
                                 <th>Mr/Mrs</th>
-                                <th>Full Name</th>
+                                <th>FULL NAME</th>
                                 <th>NIK</th>
-                                <th>Gender</th>
-                                <th>Place Birth</th>
-                                <th>Date Birth</th>
-                                <th>No Passport</th>
-                                <th>Date Issued</th>
-                                <th>Date Expired</th>
-                                <th>Issuing Office</th>
-                                <th>Plane Number</th>
-                                <th>Paket</th>
-                                <th>Price</th>
+                                <th>GENDER</th>
+                                <th>PLACE BIRTH</th>
+                                <th>DATE BIRTH</th>
+                                <th>No PASSPORT</th>
+                                <th>DATE ISSUED</th>
+                                <th>DATE EXPIRED</th>
+                                <th>ISSUING OFFICE</th>
+                                <th>PLANE NUMBER</th>
+                                <th>PAKET</th>
+                                <th>PRICE</th>
+                                {{-- <th>DISKON</th> --}}
                                 <th>DP</th>
-                                <th>Diskon</th>
-                                <th>Sisa Pembayaran</th>
-                                <th>Sales By</th>
-                                <th>Keterangan</th>
+                                <th>SISA PEMBAYARAN</th>
+                                <th>SALES BY</th>
+                                <th>KETERANGAN</th>
                             </tr>
                         </thead>
                         <tbody id="data-table-body">
@@ -93,7 +93,7 @@
                                 <td>{{ $lj->paket }}</td>
                                 <td>{{ $lj->price }}</td>
                                 <td>{{ $lj->dp }}</td>
-                                <td>{{ $lj->diskon }}</td>
+                                {{-- <td>{{ $lj->diskon }}</td> --}}
                                 <td>{{ $lj->sisa_pembayaran }}</td>
                                 <td>{{ $lj->sales_by }}</td>
                                 <td>{{ $lj->keterangan }}</td>
